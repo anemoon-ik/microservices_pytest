@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 permissions:
   contents: read
@@ -36,7 +36,8 @@ jobs:
         password: ${{secrets.PASSWORD}}
         port: 22
         script:
-          git pull origin main
+          cd microservises_pytest
+          git pull origin master
           pip install -r requirements.txt
           supervisorctl restart main
           supervisorctl restart service1
