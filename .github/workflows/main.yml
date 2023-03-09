@@ -39,7 +39,7 @@ jobs:
           cd microservises_pytest
           git pull origin master
           pip install -r requirements.txt
-          supervisorctl restart main.conf
+          supervisorctl restart main
           supervisorctl restart service1
           supervisorctl restart service2
           supervisorctl restart service3
