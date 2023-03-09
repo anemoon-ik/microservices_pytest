@@ -1,6 +1,7 @@
 attrs==22.2.0
 certifi==2022.12.7
 charset-normalizer==3.0.1
+coverage==7.2.1
 deprecation==2.1.0
 docker==6.0.1
 exceptiongroup==1.1.0
@@ -10,6 +11,7 @@ packaging==23.0
 pluggy==1.0.0
 psycopg2-binary==2.9.5
 pytest==7.2.1
+pytest-cov==4.0.0
 requests==2.28.2
 SQLAlchemy==2.0.4
 testcontainers==3.7.1
